@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/font_4083442_zxyrbwbz4q/iconfont.css">
+    <link rel="stylesheet" href="./css/creatExamination.css">
+    <link rel="stylesheet" href="./css/general.css">
+</head>
+<body>
+    <!-- 左边导航区域 -->
+    <div class="nav-left">
+        <div class="nav-logo-top">
+            <img src="./images/logo.jpg" alt="">
+            <p class="name">考试助手</p>
+        </div>
+        <ul class="nav-list">
+
+            <li><a href="#"><i class="iconfont icon-home"></i>首页</a></li>
+            <li><a href="./creatExamination.html"  class="current"><i class="iconfont icon-file"></i>创建考试</a></li>
+            <li><a href="./notification.html"><i class="iconfont icon-notification"></i>系统通知</a></li>
+            <li><a href="./history.html"><i class="iconfont icon-history"></i>考试记录</a></li>
+            <li><a href="./setting.html"><i class="iconfont icon-setting"></i>设置管理</a></li>
+            <li><a href="./collection.html"><i class="iconfont icon-favorite-filling"></i>收藏题目</a></li>
+
+
+            
+        </ul>
+        <div class="nav-bottom">
+            <img src="./images/logo.jpg" alt="">
+            <span class="name">刘晔逵</span>
+            <span class="more1">
+                <i class="iconfont icon-arrow-up-filling" id="arrow"></i>
+                <ul class="address-list">
+                    <li>退出账户</li>
+                    <li>关闭系统</li>
+                </ul>
+            </span>
+            
+        </div>
+    </div>
+    <!-- 右边部分 -->
+    <div class="nav-right">
+        <div class="header">
+            <span>
+                <i class="iconfont icon-menu"></i>
+                <span> 首页 -> <span class="create">创建考试</span></span>
+                <p></p>
+            </span>
+        </div>
+        <h2 class="title"><i class="iconfont icon-file"></i>创建考试</h2>
+        <div class="info">
+            <form action="">
+                <span >名称：</span>
+                    <input type="text" class="exam-name">
+                    <span class="exam-name-tip">请为本次考试命名</span>
+                <br>
+                <span class="exam-project">项目：</span>
+                    <select>
+                        <option>数学科目一考试</option>
+                        <!-- <option>驾驶证科目一考试</option>
+                        <option>驾驶证科目四考试</option>
+                        <option>思想道德与法治</option>
+                        <option>中国近现代史纲要</option> -->
+                    </select>
+                <br>
+                <span class="exam-amount">数量：</span>
+                    <select id="exam-amount">
+                        <option>200道</option>
+                        <option selected>100道</option>
+                        <option>50道</option>
+                        <option>20道</option>
+                        <option>10道</option>
+                    </select>
+                <br>
+                <span class="exam-amount">难度：</span>
+                    <select id="exam-difficulty">
+                        <option selected>默认</option>
+                        <option>简单</option>
+                        <option>普通</option>
+                        <option>困难</option>
+                    </select>
+                <br>
+                <span>模式：</span>
+                    <input type="radio" name="judgeStyle" value="during"><span class="detail">自测刷题</span> 
+                    <input type="radio" name="judgeStyle" value="after"><span class="detail">模拟考试</span>
+                    <div class="tip-block">
+                        自测刷题：每做完一题可查看该题答案
+                        <br>
+                        模拟考试：提交试卷后才能查看答案
+                    </div>
+                <br>
+                <span >限时：</span>
+                    <input type="text" class="exam-timeLimit" id="time"> 分钟
+                <br>
+                <span class="confirm">创建</span>
+            </form>
+        </div>
+        
+    </div>
+</body>
+<script src="./js/general.js"></script>
+<script src="./js/creatExamination.js"></script>
+</html>
